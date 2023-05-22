@@ -1,0 +1,171 @@
+.similar {
+  display: flex;
+  width: 773px;
+  height: 250px;
+  position: relative;
+  background: #1F2731;
+  border-radius: 2px;
+  margin-bottom: 50px;
+
+  &__subtitles {
+    width: 309px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    span {
+      font-family: 'Spartan', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #EF272C;
+    }
+
+    h1 {
+      font-family: 'Spartan', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-family: 'Spartan', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #939393;
+    }
+  }
+
+  &__drinks {
+    margin-left: 20px;
+    margin-top: 24px;
+    h1{
+      font-family: 'Spartan', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    div {
+      span{
+        font-family: 'Spartan', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 6px 0;
+        color: #939393;
+      }
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.close{
+  top: 120px;
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  left: 56px;
+}
+
+
+
+@media (max-width: 1200px) {
+  .menus{
+    flex-direction: column;
+    &__deserts{
+      margin-top: 50px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .menus{
+    flex-direction: column;
+    &__deserts{
+      margin-top: 50px;
+
+      .similar{
+        width: 675px;
+
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .menus{
+    &__deserts{
+
+      .similar{
+        width: 420px;
+
+          img{
+            width: 200px;
+          }
+        &__subtitles{
+          width: 100%;
+          h1{
+            font-size: 12px;
+          }
+          p{
+            font-size: 11px;
+          }
+        }
+
+        &__drinks{
+          h1{
+            font-size: 12px;
+          }
+          div{
+            width: 170px;
+            span{
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .menus{
+    &__desert{
+      display: none;
+    }
+    &__deserts{
+
+      .similar{
+        width: 100%;
+
+          img{
+            width: 100%;
+          }
+        &__subtitles{
+          justify-content: space-between;
+          width: 94%;
+          h1{
+            font-size: 12px;
+          }
+          p{
+            font-size: 11px;
+          }
+        }
+
+        &__drinks{
+          display: none;
+          h1{
+            font-size: 12px;
+          }
+          div{
+            width: 170px;
+            span{
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

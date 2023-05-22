@@ -1,0 +1,84 @@
+
+.desert {
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 363px;
+    height: 66px;
+    background: #1F2731;
+    text-align: center;
+
+    &--line {
+      width: 238.01px;
+      height: 1px;
+      background: #E5E5E5;
+      margin-top: 15px;
+    }
+
+    button {
+      width: 303px;
+      background: #1F2731;
+      font-family: 'Silk Serif', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      color: #FFFFFF;
+      position: relative;
+      border: none;
+      opacity: 0.6;
+      margin-top: 15px;
+      cursor: pointer;
+
+
+      &:focus {
+        opacity: 1;
+        background: #EF272C;
+        width: 363px;
+        height: 66px;
+        margin: 0;
+        position: absolute;
+      }
+
+      &:focus:before {
+        content: '';
+        background: #FFFFFF;
+        position: absolute;
+        width: 60px;
+        height: 1px;
+        right: -15px;
+        top: 50%;
+        transform: translateY(50%);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 380px) {
+  .desert {
+    &__btn {
+      width: 335px;
+
+      button {
+        &:focus {
+          width: 335px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .desert {
+    &__btn {
+      width: 305px;
+
+      button {
+        &:focus {
+          width: 305px;
+        }
+      }
+    }
+  }
+}

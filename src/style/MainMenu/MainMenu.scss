@@ -1,0 +1,259 @@
+#mainMenu {
+  padding-top: 165px;
+
+  h1 {
+    text-align: center;
+    font-family: "Shalimar", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+
+    img {
+      margin: 0 39px;
+    }
+  }
+
+  h2 {
+    font-family: 'Silk Serif', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .menu {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &__desert{
+      margin-top: 25px;
+      margin-right: 94px;
+    }
+    &__price {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      h1 {
+        font-family: 'Silk Serif', serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+      }
+
+      span {
+        font-family: 'Silk Serif', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #EF272C;
+      }
+
+      &--dash {
+        width: 401px;
+        border: 1px dashed white;
+        height: 0;
+        margin: 0 20px;
+      }
+    }
+
+    &__order {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 13px;
+
+      p {
+        font-family: 'Spartan', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        width: 512px;
+        color: #E5E5E5;
+      }
+
+      a {
+        margin-top: 33px;
+        font-family: 'Silk Serif', serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #FFFFFF;
+        border-bottom: 2px solid;
+        padding-bottom: 1.4px;
+      }
+    }
+  }
+
+  .menus {
+    margin-top: -30px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &--line {
+      background: #EF272C;
+      width: 144px;
+      height: 1px;
+      margin: 5px;
+    }
+
+    &--button {
+      cursor: pointer;
+      background: none;
+      font-family: 'Spartan', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border: 1px solid #EF272C;
+      padding: 15px 30px;
+
+      &__arrow {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1140px) {
+  #mainMenu {
+    .menu {
+      &__order {
+        p {
+          width: 470px;
+        }
+      }
+
+      &__price {
+        &--dash {
+          width: 340px;
+        }
+      }
+    }
+
+    .menus {
+      margin-left: 89px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #mainMenu {
+
+    .menu {
+      &__order {
+        p {
+          width: 380px;
+        }
+      }
+
+      &__price {
+        &--dash {
+          width: 260px;
+        }
+      }
+    }
+
+    .menus {
+      margin-left: 175px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #mainMenu {
+
+    .menu {
+      &__order {
+        p {
+          font-size: 12px;
+
+          width: 340px;
+        }
+      }
+
+      &__price {
+        &--dash {
+          width: 210px;
+        }
+      }
+    }
+
+    .menus {
+      margin-left: 220px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #mainMenu {
+
+    .menu {
+      flex-direction: column;
+      align-items: center;
+
+      &__order {
+        p {
+          font-size: 12px;
+
+          width: 340px;
+        }
+      }
+
+      &__price {
+        &--dash {
+          width: 210px;
+        }
+      }
+    }
+
+    .menus {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #mainMenu {
+
+    .menu {
+      flex-direction: column;
+      align-items: center;
+
+      &__desert{
+        margin-right: 0;
+      }
+      &__right-group{
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #mainMenu {
+    h1{
+      font-size: 32px;
+      img{
+        margin: 0 15px;
+      }
+    }
+    h2{
+      font-size: 24px;
+      line-height: 37px;
+      margin-bottom: 35px;
+    }
+    .menus{
+      margin-top: -70px;
+    }
+  }
+}
+
+
